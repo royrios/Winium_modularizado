@@ -20,10 +20,6 @@ public class Init_winiumDriver {
 		
 	}
 	
-	private void executeWiniumDriver() throws IOException {
-		Runtime obj = Runtime.getRuntime(); 
-		  obj.exec(".\\Winium_Driver\\Winium.Desktop.Driver.exe"); 
-	}
 	
 	
 	public WiniumDriver GetDriver()  {
@@ -47,6 +43,10 @@ public class Init_winiumDriver {
 		
 	}
 	
+	private void executeWiniumDriver() throws IOException {
+		Runtime obj = Runtime.getRuntime(); 
+		  obj.exec(".\\Winium_Driver\\Winium.Desktop.Driver.exe"); 
+	}
 	
 	
 }

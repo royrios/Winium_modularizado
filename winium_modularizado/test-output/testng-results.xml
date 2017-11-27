@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19022" started-at="2017-11-27T16:40:39Z" finished-at="2017-11-27T16:40:58Z">
+  <suite name="Default suite" duration-ms="19281" started-at="2017-11-27T20:01:02Z" finished-at="2017-11-27T20:01:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19022" started-at="2017-11-27T16:40:39Z" finished-at="2017-11-27T16:40:58Z">
+    <test name="Default test" duration-ms="19281" started-at="2017-11-27T20:01:02Z" finished-at="2017-11-27T20:01:21Z">
       <class name="Testsng_cases.TestNG_modulo_login">
-        <test-method status="PASS" signature="SetupEnviroment()[pri:0, instance:Testsng_cases.TestNG_modulo_login@5442a311]" name="SetupEnviroment" is-config="true" duration-ms="1388" started-at="2017-11-27T10:40:39Z" finished-at="2017-11-27T10:40:40Z">
+        <test-method status="PASS" signature="ConfigReport()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ConfigReport" is-config="true" duration-ms="331" started-at="2017-11-27T14:01:02Z" finished-at="2017-11-27T14:01:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigReport -->
+        <test-method status="PASS" signature="SetupEnviroment()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="SetupEnviroment" is-config="true" duration-ms="1386" started-at="2017-11-27T14:01:02Z" finished-at="2017-11-27T14:01:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupEnviroment -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@5442a311]" name="ExecuteTest" duration-ms="4066" started-at="2017-11-27T10:40:41Z" data-provider="data-provider" finished-at="2017-11-27T10:40:45Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4199" started-at="2017-11-27T14:01:05Z" data-provider="data-provider" finished-at="2017-11-27T14:01:09Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@5442a311]" name="ExecuteTest" duration-ms="4058" started-at="2017-11-27T10:40:45Z" data-provider="data-provider" finished-at="2017-11-27T10:40:49Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4146" started-at="2017-11-27T14:01:09Z" data-provider="data-provider" finished-at="2017-11-27T14:01:13Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@5442a311]" name="ExecuteTest" duration-ms="3918" started-at="2017-11-27T10:40:49Z" data-provider="data-provider" finished-at="2017-11-27T10:40:53Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4089" started-at="2017-11-27T14:01:13Z" data-provider="data-provider" finished-at="2017-11-27T14:01:17Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@5442a311]" name="ExecuteTest" duration-ms="4314" started-at="2017-11-27T10:40:53Z" data-provider="data-provider" finished-at="2017-11-27T10:40:57Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4134" started-at="2017-11-27T14:01:17Z" data-provider="data-provider" finished-at="2017-11-27T14:01:21Z">
           <params>
             <param index="0">
               <value>
@@ -55,63 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="FAIL" signature="CloseTest()[pri:0, instance:Testsng_cases.TestNG_modulo_login@5442a311]" name="CloseTest" is-config="true" duration-ms="33" started-at="2017-11-27T10:40:57Z" finished-at="2017-11-27T10:40:57Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[El proceso ha terminado y la información solicitada no está disponible. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'LAPTOP-IEPOTQSJ', ip: '192.168.1.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Capabilities [{app=C:\Users\Roy\Documents\proyectos visual EXE\LogIn\setup.exe, args=, innerPort=9998, debugConnectToRunningApp=false, keyboardSimulator=1, launchDelay=0, platform=ANY}]
-Session ID: AwesomeSession]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: El proceso ha terminado y la información solicitada no está disponible. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 30 milliseconds
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'LAPTOP-IEPOTQSJ', ip: '192.168.1.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.winium.WiniumDriver
-Capabilities [{app=C:\Users\Roy\Documents\proyectos visual EXE\LogIn\setup.exe, args=, innerPort=9998, debugConnectToRunningApp=false, keyboardSimulator=1, launchDelay=0, platform=ANY}]
-Session ID: AwesomeSession
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:459)
-	at Testsng_cases.TestNG_modulo_login.CloseTest(TestNG_modulo_login.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="CloseTest()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="CloseTest" is-config="true" duration-ms="16" started-at="2017-11-27T14:01:21Z" finished-at="2017-11-27T14:01:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTest -->
