@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -32,7 +33,7 @@ public class TestNG_modulo_login {
 	}
 	
 	
-	@AfterClass
+	@AfterSuite
 	public void CloseTest() {
 		driver.close();
 	}
