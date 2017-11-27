@@ -35,7 +35,7 @@ public class TestNG_modulo_login {
 	
 	@AfterSuite
 	public void CloseTest() {
-		driver.close();
+	//	driver.close();
 	}
 	
 	
