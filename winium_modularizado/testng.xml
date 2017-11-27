@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
   	<classes>
-  	 <class name="TestNG_cases.TestNG_modulo_login"/>
+  	 <class name="Testsng_cases.TestNG_modulo_login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
