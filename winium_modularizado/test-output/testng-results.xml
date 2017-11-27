@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19281" started-at="2017-11-27T20:01:02Z" finished-at="2017-11-27T20:01:21Z">
+  <suite name="Default suite" duration-ms="19443" started-at="2017-11-27T20:09:36Z" finished-at="2017-11-27T20:09:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19281" started-at="2017-11-27T20:01:02Z" finished-at="2017-11-27T20:01:21Z">
+    <test name="Default test" duration-ms="19443" started-at="2017-11-27T20:09:36Z" finished-at="2017-11-27T20:09:55Z">
       <class name="Testsng_cases.TestNG_modulo_login">
-        <test-method status="PASS" signature="ConfigReport()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ConfigReport" is-config="true" duration-ms="331" started-at="2017-11-27T14:01:02Z" finished-at="2017-11-27T14:01:02Z">
+        <test-method status="PASS" signature="ConfigReport()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ConfigReport" is-config="true" duration-ms="417" started-at="2017-11-27T14:09:36Z" finished-at="2017-11-27T14:09:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigReport -->
-        <test-method status="PASS" signature="SetupEnviroment()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="SetupEnviroment" is-config="true" duration-ms="1386" started-at="2017-11-27T14:01:02Z" finished-at="2017-11-27T14:01:04Z">
+        <test-method status="PASS" signature="SetupEnviroment()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="SetupEnviroment" is-config="true" duration-ms="1386" started-at="2017-11-27T14:09:36Z" finished-at="2017-11-27T14:09:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupEnviroment -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4199" started-at="2017-11-27T14:01:05Z" data-provider="data-provider" finished-at="2017-11-27T14:01:09Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4101" started-at="2017-11-27T14:09:38Z" data-provider="data-provider" finished-at="2017-11-27T14:09:43Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4146" started-at="2017-11-27T14:01:09Z" data-provider="data-provider" finished-at="2017-11-27T14:01:13Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4126" started-at="2017-11-27T14:09:43Z" data-provider="data-provider" finished-at="2017-11-27T14:09:47Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4089" started-at="2017-11-27T14:01:13Z" data-provider="data-provider" finished-at="2017-11-27T14:01:17Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4259" started-at="2017-11-27T14:09:47Z" data-provider="data-provider" finished-at="2017-11-27T14:09:51Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4134" started-at="2017-11-27T14:01:17Z" data-provider="data-provider" finished-at="2017-11-27T14:01:21Z">
+        <test-method status="PASS" signature="ExecuteTest(java.util.HashMap)[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="ExecuteTest" duration-ms="4129" started-at="2017-11-27T14:09:51Z" data-provider="data-provider" finished-at="2017-11-27T14:09:55Z">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="CloseTest()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="CloseTest" is-config="true" duration-ms="16" started-at="2017-11-27T14:01:21Z" finished-at="2017-11-27T14:01:21Z">
+        <test-method status="PASS" signature="CloseTest()[pri:0, instance:Testsng_cases.TestNG_modulo_login@548e7350]" name="CloseTest" is-config="true" duration-ms="0" started-at="2017-11-27T14:09:55Z" finished-at="2017-11-27T14:09:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTest -->
