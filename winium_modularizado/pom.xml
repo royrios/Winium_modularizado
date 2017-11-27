@@ -21,7 +21,7 @@
 		<configuration>
 			<suiteXmlFiles>
 				<!-- TestNG suite XML files -->
-				<suiteXmlFile>Testng.xml</suiteXmlFile>
+				<suiteXmlFile>testng.xml</suiteXmlFile>
 			</suiteXmlFiles>
 			<configuration>
                <skipTests>false</skipTests>
