@@ -1,6 +1,7 @@
 package Testsng_cases;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 
 import org.openqa.selenium.winium.WiniumDriver;
@@ -42,7 +43,7 @@ public class TestNG_modulo_login {
 	
 	
 	@BeforeTest
-	public void ConfigReport() {
+	public void ConfigReport() throws IOException{
 		reports = new ExtentReports("C:\\Extentreports\\ExtentReportF_" + id + ".html", true);
 		reports.addSystemInfo("Host Name", "Lisyx").addSystemInfo("Environment", "https://autos.staging.hdi.com.mx")
 				.addSystemInfo("User Name", "Lisys");
@@ -63,7 +64,7 @@ public class TestNG_modulo_login {
 	
 	
 	@AfterTest
-	public void CloseTest() {
+	public void CloseTest() throws IOException {
 		//driver.close();
 		reports.endTest(logger);
 	}

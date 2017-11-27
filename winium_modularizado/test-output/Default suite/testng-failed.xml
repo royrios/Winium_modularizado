@@ -5,6 +5,7 @@
     <classes>
       <class name="Testsng_cases.TestNG_modulo_login">
         <methods>
+          <include name="ConfigReport"/>
           <include name="CloseTest"/>
           <include name="ExecuteTest" invocation-numbers="0 1 2 3"/>
           <include name="SetupEnviroment"/>
