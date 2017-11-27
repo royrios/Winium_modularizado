@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
+import org.apache.xalan.xsltc.compiler.sym;
 import org.openqa.selenium.winium.WiniumDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -38,22 +39,22 @@ public class TestNG_modulo_login {
 		this.driver= setup.GetDriver();
 		
 		id = Thread.currentThread().getId();
-		 
+		 System.out.println(id);
 	}
 	
 	
 	@BeforeTest
 	public void ConfigReport() throws IOException{
 		reports = new ExtentReports("C:\\Extentreports\\ExtentReportF_" + id + ".html", true);
-		reports.addSystemInfo("Host Name", "Lisyx").addSystemInfo("Environment", "https://autos.staging.hdi.com.mx")
-				.addSystemInfo("User Name", "Lisys");
+		reports.addSystemInfo("Host Name", "Lisyx").addSystemInfo("Environment", "Login ejemplo")
+				.addSystemInfo("User Name", "Lisyx");
 		reports.loadConfig(new File(System.getProperty("user.dir") + "\\extent-config.xml"));
 	}
 	
 	@Test(dataProvider = "data-provider", dataProviderClass = DataProviderClass.class)
 	public void ExecuteTest(HashMap<String, Object> rowMap) {
 		
-		logger=reports.startTest("Cotizador Autos HDI Chrome " + id + "");
+		logger=reports.startTest("Ejemplo login " + id + "");
 		
 		//Login_actions contiene las acciones que se pueden ejecutar el el modulo LogIn
 		Login_actions objLogIn = new Login_actions(this.driver,logger);
@@ -66,7 +67,9 @@ public class TestNG_modulo_login {
 	@AfterTest
 	public void CloseTest() throws IOException {
 		//driver.close();
+		System.out.println(reports.toString());
 		reports.endTest(logger);
+		reports.flush();
 	}
 	
 	
