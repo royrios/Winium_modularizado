@@ -1,5 +1,6 @@
 package modulos_actions;
 
+
 import java.util.HashMap;
 
 import org.openqa.selenium.winium.WiniumDriver;
@@ -11,37 +12,37 @@ import modulos_components.LogIn_components;
 
 public class Login_actions {
 
-	private LogIn_components elements;
-	private ExtentTest logger;
+	private static  LogIn_components elements;
+	private static  ExtentTest logger;
+	
+	
 		
 		 public Login_actions(WiniumDriver driver, ExtentTest logger) {
 			// Iniciamos la clase que contiene los componentes de este modulo
 			// y al mismo tiempo se añade el Winium Driver a la clase para la manipulación de dichos componentes 
-			this.elements = new LogIn_components(driver);
+			elements = new LogIn_components(driver,logger);
 			
-			this.logger = logger;
+			Login_actions.logger = logger;
 			
 		}
 		
-		public void ExecuteLogIn(HashMap<String, Object> rowMap) {
+		public  void ExecuteLogIn(HashMap<String, Object> rowMap)     {
 			
-			try {
-				this.elements.TxtUsername().sendKeys(rowMap.get("User").toString());
-				this.elements.TxtPassword().sendKeys(rowMap.get("Password").toString());
-				this.elements.BtnLogin().click();
-				
-				this.logger.log(LogStatus.PASS, "Test Case (Lanzar Navegador) se realizo correctamente");
-			}catch (Exception e) {
-				// TODO: handle exception
-				logger.log(LogStatus.PASS, "Test Case (Lanzar Navegador) fallo");
-			}
+				elements.TxtUsername().sendKeys(rowMap.get("User").toString());
+				elements.TxtPassword().sendKeys(rowMap.get("Password").toString());
+				elements.BtnLogin().click();
+				logger.log(LogStatus.PASS, "Test Case (Login) Entro");
 			
 			
 		}
 		
 		
-		public void ExecuteLogOut() {
-			this.elements.BtnLogOut().click();
+		public void ExecuteLogOut()  {
+			
+			
+			elements.BtnLogOut().click();
+			logger.log(LogStatus.PASS, "Test Case (Salir) Completado");
+		
 		}
 
 		

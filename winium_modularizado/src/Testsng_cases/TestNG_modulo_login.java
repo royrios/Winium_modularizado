@@ -1,8 +1,12 @@
 package Testsng_cases;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 
 import org.apache.xalan.xsltc.compiler.sym;
 import org.openqa.selenium.winium.WiniumDriver;
@@ -15,6 +19,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import configuration.Init_winiumDriver;
 import configuration.DataProviderClass;
@@ -26,6 +31,7 @@ public class TestNG_modulo_login {
 	public static ExtentTest logger;
 	private WiniumDriver driver;
 	long id;
+	
 	
 	
 	
@@ -51,16 +57,25 @@ public class TestNG_modulo_login {
 		reports.loadConfig(new File(System.getProperty("user.dir") + "\\extent-config.xml"));
 	}
 	
+	
 	@Test(dataProvider = "data-provider", dataProviderClass = DataProviderClass.class)
-	public void ExecuteTest(HashMap<String, Object> rowMap) {
+	public void ExecuteTest(HashMap<String, Object> rowMap) throws IOException, InterruptedException, AWTException   {
 		
 		logger=reports.startTest("Ejemplo login " + id + "");
 		
 		//Login_actions contiene las acciones que se pueden ejecutar el el modulo LogIn
-		Login_actions objLogIn = new Login_actions(this.driver,logger);
 		
-		objLogIn.ExecuteLogIn(rowMap);
-		objLogIn.ExecuteLogOut();
+		
+		Login_actions objLogIn = new Login_actions(this.driver,logger);
+			
+			
+			objLogIn.ExecuteLogIn(rowMap);
+			objLogIn.ExecuteLogOut();
+			
+			
+			
+						
+		
 	}
 	
 	

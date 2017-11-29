@@ -7,7 +7,7 @@
         <methods>
           <include name="ConfigReport"/>
           <include name="CloseTest"/>
-          <include name="ExecuteTest" invocation-numbers="0 1 2 3"/>
+          <include name="ExecuteTest" invocation-numbers="0"/>
           <include name="SetupEnviroment"/>
         </methods>
       </class> <!-- Testsng_cases.TestNG_modulo_login -->
